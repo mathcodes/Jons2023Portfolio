@@ -45,3 +45,9 @@ pre[class*='language-'] {
 .token.combinator {
   color: theme('colors.zinc.400');
 }
+
+.contact{
+  padding: 20px;
+    max-width: 768px;
+    margin: auto;
+}

@@ -10,21 +10,21 @@ export async function generateRssFeed() {
   let siteUrl = process.env.NEXT_PUBLIC_SITE_URL
   let author = {
     name: 'Jon Christie',
-    email: 'Jon@planetaria.tech',
+    email: 'Jon@jonchristie.net',
   }
 
   let feed = new Feed({
     title: author.name,
     description: 'Your blog description',
     author,
-    id: siteUrl,
-    link: siteUrl,
-    image: `${siteUrl}/favicon.ico`,
-    favicon: `${siteUrl}/favicon.ico`,
+    id: www.jonchristie.net/favicon.png,
+    link: 'https://jonchristie.hashnode.dev/full-stack-developers',
+    image: `www.jonchristie.net/favicon.png`,
+    favicon: `www.jonchristie.net/favicon.png`,
     copyright: `All rights reserved ${new Date().getFullYear()}`,
     feedLinks: {
-      rss2: `${siteUrl}/rss/feed.xml`,
-      json: `${siteUrl}/rss/feed.json`,
+      rss2: `https://jonchristie.hashnode.dev/rss/feed.xml`,
+      json: `https://jonchristie.hashnode.dev/rss/feed.json`,
     },
   })
 
