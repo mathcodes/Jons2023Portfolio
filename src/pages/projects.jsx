@@ -2,32 +2,32 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Card } from '@/components/Card';
 import { SimpleLayout } from '@/components/SimpleLayout';
-import logoAnimaginary from '@/images/logos/animaginary.svg';
-import logoCosmos from '@/images/logos/cosmos.svg';
-import logoHelioStream from '@/images/logos/helio-stream.svg';
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg';
-import logoPlanetaria from '@/images/logos/planetaria.svg';
-import logoReact from '@/images/logos/react.svg';
+// import logoAnimaginary from '@/images/logos/animaginary.svg';
+// import logoCosmos from '@/images/logos/cosmos.svg';
+// import logoHelioStream from '@/images/logos/helio-stream.svg';
+// import logoOpenShuttle from '@/images/logos/open-shuttle.svg';
+// import logoPlanetaria from '@/images/logos/planetaria.svg';
+// import logoReact from '@/images/logos/react.svg';
 import cfd from '@/images/projects/cfd.png';
-import askSage from '../images/projects/askSage.png';
+import askSage from '../images/projects/AskSage.png';
 import gptfordevs from '@/images/projects/ChatGPT.png';
-// import figma, html, css, react, firebase, GitHub, tailwind
-import Figma from '@/images/logos/figma.svg';
-import HTML from '@/images/logos/html.svg';
-import CSS from '@/images/logos/css.svg';
-import ReactLogo from '@/images/logos/react.svg';
-import Firebase from '@/images/logos/firebase.svg';
-import GitHub from '@/images/logos/GitHub.svg';
-import Tailwind from '@/images/logos/tailwind.svg';
-import OpenAi from '@/images/logos/openaism.svg';
-import Emotion from '@/images/logos/emotion.png';
-import Bootstrap from '@/images/logos/bootstrap.svg';
-import MUI from '@/images/logos/materialui.svg';
-import Python from '@/images/logos/python.svg';
-import Javascript from '@/images/logos/javascript.svg';
-import Git from '@/images/logos/git.svg';
-import NextJS from '@/images/logos/nextJS.svg';
-import Express from '@/images/logos/expressjs.png';
+// // import figma, html, css, react, firebase, GitHub, tailwind
+// import Figma from '@/images/logos/figma.svg';
+// import HTML from '@/images/logos/html.svg';
+// import CSS from '@/images/logos/css.svg';
+// import ReactLogo from '@/images/logos/react.svg';
+// import Firebase from '@/images/logos/firebase.svg';
+// import GitHub from '@/images/logos/GitHub.svg';
+// import Tailwind from '@/images/logos/tailwind.svg';
+// import OpenAi from '@/images/logos/openaism.svg';
+// import Emotion from '@/images/logos/emotion.png';
+// import Bootstrap from '@/images/logos/bootstrap.svg';
+// import MUI from '@/images/logos/materialui.svg';
+// import Python from '@/images/logos/python.svg';
+// import Javascript from '@/images/logos/javascript.svg';
+// import Git from '@/images/logos/git.svg';
+// import NextJS from '@/images/logos/nextJS.svg';
+// import Express from '@/images/logos/expressjs.png';
 
 const projects = [
   {
@@ -36,9 +36,8 @@ const projects = [
       'This open-source project aims to please users with not just another site full of resources, exercises, and solutions to problems. Contributors are encouraged to upload and share any additional content such as visual diagrams, animated GIFs, notes, charts, or whatever works for them in an effort to provide a more complete learning experience for all utilizing different learning styles.',
     linkLive: 'http://contentfordevelopers.com',
     linkGH: 'https://GitHub.com/mathcodes/contentfordevelopers',
-    logo: logoReact,
     image: cfd,
-    tech: [ReactLogo, Tailwind, HTML, CSS, GitHub, Emotion, MUI, Express],
+    // tech: [ReactLogo, Tailwind, HTML, CSS, GitHub, Emotion, MUI, Express],
   },
   {
     name: 'AskSage.ai',
@@ -47,7 +46,7 @@ const projects = [
     linkLive: 'https://asksage.ai',
     linkGH: '#',
     image: askSage,
-    tech: [Figma, ReactLogo, Bootstrap, HTML, CSS, Python, Javascript, Git, GitHub],
+    // tech: [Figma, ReactLogo, Bootstrap, HTML, CSS, Python, Javascript, Git, GitHub],
   },
   {
     name: 'ChatGPT for Developers',
@@ -56,7 +55,7 @@ const projects = [
     linkLive: 'https://chatgpt-for-developers.vercel.app/',
     linkGH: 'https://GitHub.com/mathcodes/chatgpt-for-developers',
     image: gptfordevs,
-    tech: [OpenAi, ReactLogo, Tailwind, OpenAi, Emotion, HTML, CSS, GitHub, NextJS, Firebase],
+    // tech: [OpenAi, ReactLogo, Tailwind, OpenAi, Emotion, HTML, CSS, GitHub, NextJS, Firebase],
   },
 ];
 
