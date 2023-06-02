@@ -12,15 +12,16 @@ import {
   LinkedInIcon,
   TwitterIcon,
 } from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+import gncoLogo from '@/images/logos/gncoLogo.png'
+import scbLogo from '@/images/logos/scbLogo.png'
+import te21Logo from '@/images/logos/te21Logo.jpg'
+import pivotousLogo from '@/images/logos/pivotousLogo.png'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
+
 import { formatDate } from '@/lib/formatDate'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
@@ -102,7 +103,7 @@ function Article({ article }) {
 function SocialLink({ icon: Icon, ...props }) {
   return (
     <Link className="group -m-1 p-1" {...props}>
-      <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
+      <Icon className=" p-3 h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
     </Link>
   )
 }
@@ -139,9 +140,9 @@ function SocialLink({ icon: Icon, ...props }) {
 function Resume() {
   let resume = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
-      logo: logoPlanetaria,
+      company: 'Gladis & Co.',
+      title: 'Web Developer',
+      logo: gncoLogo,
       start: '2019',
       end: {
         label: 'Present',
@@ -149,23 +150,23 @@ function Resume() {
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
-      logo: logoAirbnb,
-      start: '2014',
-      end: '2019',
+      company: 'Sweet Clover Barn',
+      title: 'Web Developer',
+      logo: scbLogo,
+      start: 'April 2021',
+      end: 'June 2021',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
-      start: '2011',
-      end: '2014',
+      company: 'TE21, Inc.',
+      title: 'Curriculum Developer',
+      logo: te21Logo,
+      start: '2016',
+      end: '2018',
     },
     {
-      company: 'Starbucks',
+      company: 'Pivotous',
       title: 'Shift Supervisor',
-      logo: logoStarbucks,
+      logo: pivotousLogo,
       start: '2008',
       end: '2011',
     },
@@ -217,10 +218,13 @@ function Resume() {
           </li>
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
+      <a href="/files/Jon_Christie_Resume.pdf" download="Jon_Christie_CV.pdf" >
+
+
+      <Button variant="secondary" className="group mt-6 w-full">
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
-      </Button>
+      </Button></a>
     </div>
   )
 }
