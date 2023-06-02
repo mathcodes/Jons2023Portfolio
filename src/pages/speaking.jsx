@@ -41,10 +41,10 @@ export default function Speaking() {
           <h6 className="container contact text-zinc-800 transition dark:text-zinc-200" style={{ padding: '20px', maxWidth: `768px` }}>... I am excited to connect with potential opportunities and collaborations. With over a 5+ years of experience as a front-end developer, I have worked extensively with JavaScript, TypeScript, React, React Native, WordPress, SquareSpace, HTML, CSS, PHP, Python and more, including libraries and frameworks   to enhance and create websites for clients.
             <br />
             <br />
-            In addition to my technical expertise, I have a passion for teaching and providing guidance to clients and the community. I strive to bring clarity to confusion on a daily basis. My commitment to learning and adapting, along with my deep interests in gaming, technology, science, and green energy, have made me an invaluable asset to the teams I've worked with.
+            In addition to my technical expertise, I have a passion for teaching and providing guidance to clients and the community. I strive to bring clarity to confusion on a daily basis. My commitment to learning and adapting, along with my deep interests in gaming, technology, science, and green energy, have made me an invaluable asset to the teams I&apos;ve worked with.
             <br />
             <br />
-            If you are interested in discussing potential projects, employment opportunities, or simply want to connect, please feel free to reach out. You can contact me at [Your Contact Information]. I am eager to explore how I can contribute my skills, knowledge, and enthusiasm to your organization's success.
+            If you are interested in discussing potential projects, employment opportunities, or simply want to connect, please feel free to reach out. You can contact me at [Your Contact Information]. I am eager to explore how I can contribute my skills, knowledge, and enthusiasm to your organization&apos;s success.
           </h6>
 
         </div>
