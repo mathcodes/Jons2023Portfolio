@@ -45,7 +45,7 @@ export default function About() {
         <meta
           name="description"
           content="I’m Jon Christie. I live in Raleigh, North Carolina and work as a Front-End Developer at a small company called 3Advance."
-        />
+       />
       </Head>
       <Container className="mt-16 sm:mt-32">
         <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
@@ -105,15 +105,34 @@ export default function About() {
               </SocialLink>
             </ul>
           </div>
+        </div>
           <div className="lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
               Skills
             </h1>
-            <div className="flex flex-wrap justify-center">
+            <div className="flex flex-wrap space-x-2  justify-center">
+              <img src="https://img.shields.io/badge/-Express-black?style=flat&logo=express&logoColor=white" alt="Express" style={{height:"1.5rem"}} className="my-2"/>
+              <img src="https://img.shields.io/badge/-ReactJS-blue?style=flat&logo=react&logoColor=white" alt="ReactJS" style={{height:"1.5rem"}} className="my-2"/>
+              <img src="https://img.shields.io/badge/-MongoDB-green?style=flat&logo=mongodb&logoColor=white" alt="MongoDB" style={{height:"1.5rem"}} className="my-2"/>
+              <img src="https://img.shields.io/badge/-React_Native-61DAFB?style=flat&logo=react&logoColor=white" alt="React-Native" style={{height:"1.5rem"}} className="my-2"/>
+              <img src="https://img.shields.io/badge/-TypeScript-blue?style=flat&logo=typescript&logoColor=white" alt="TypeScript" style={{height:"1.5rem"}} className="my-2"/>
+              <img src="https://img.shields.io/badge/-JavaScript-yellow?style=flat&logo=javascript&logoColor=white" alt="JavaScript" style={{height:"1.5rem"}} className="my-2"/>
+              <img src="https://img.shields.io/badge/-HTML-orange?style=flat&logo=html5&logoColor=white" alt="HTML" style={{height:"1.5rem"}} className="my-2"/>
+              <img src="https://img.shields.io/badge/-CSS-blue?style=flat&logo=css3&logoColor=white" alt="CSS" style={{height:"1.5rem"}} className="my-2"/>
+              <img src="https://img.shields.io/badge/-Python-blue?style=flat&logo=python&logoColor=white" alt="Python" style={{height:"1.5rem"}} className="my-2"/>
+              <img src="https://img.shields.io/badge/-Django-green?style=flat&logo=django&logoColor=white" alt="Django" style={{height:"1.5rem"}} className="my-2"/>
+              <img src="https://img.shields.io/badge/-Flask-black?style=flat&logo=flask&logoColor=white" alt="Flask" style={{height:"1.5rem"}} className="my-2"/>
+              <img src="https://img.shields.io/badge/-SQL-blue?style=flat&logo=sql&logoColor=white" alt="SQL" style={{height:"1.5rem"}} className="my-2"/>
+              <img src="https://img.shields.io/badge/-noSQL-green?style=flat" alt="noSQL" style={{height:"1.5rem"}} className="my-2"/>
+              <img src="https://img.shields.io/badge/-OpenAI_API-blue?style=flat" alt="OpenAI-API" style={{height:"1.5rem"}} className="my-2"/>
+              <img src="https://img.shields.io/badge/-UI_UX-purple?style=flat" alt="UI/UX" style={{height:"1.5rem"}} className="my-2"/>
+              <img src="https://img.shields.io/badge/-Git-orange?style=flat&logo=git&logoColor=white" alt="Git" style={{height:"1.5rem"}} className="my-2"/>
+              <img src="https://img.shields.io/badge/-Jest-red?style=flat&logo=jest&logoColor=white" alt="Jest" style={{height:"1.5rem"}} className="my-2"/>
+              <img src="https://img.shields.io/badge/-React_Testing_Library-purple?style=flat" alt="React-Testing-Library" style={{height:"1.5rem"}} className="my-2"/>
+              <img src="https://img.shields.io/badge/-Open_Source-brightgreen?style=flat" alt="Open-Source" style={{height:"1.5rem"}} className="my-2"/>
 
             </div>
           </div>
-        </div>
       </Container>
     </>
   )
