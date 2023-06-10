@@ -1,5 +1,5 @@
 import Head from 'next/head'
-
+import { Container } from '@/components/Container'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { formatDate } from '@/lib/formatDate'
@@ -9,7 +9,7 @@ function Blog({ article }) {
   return (
     <article className="md:grid md:grid-cols-4 md:items-baseline">
       <Card className="md:col-span-3">
-        <Card.Title href={`/articles/${article.slug}`}>
+        <Card.Title href={`${article.slug}`} target="_blank">
           {article.title}
         </Card.Title>
         <Card.Eyebrow
@@ -44,31 +44,43 @@ export default function ArticlesIndex({ articles }) {
           content="All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order."
         />
       </Head>
-      <div class="flex flex-row">
-
       <SimpleLayout
         title="Check out my articles"
         intro="All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order."
       >
+        {articles.map((article) => (
 
-
-        <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
-          <div className="flex max-w-3xl flex-col space-y-16">
-            {articles.map((article) => (
-
-              <Blog key={article.slug} article={article} />
-            ))}
-          </div>
-        </div>
-      </SimpleLayout></div>
+          <Blog key={article.slug} article={article} />
+        ))}
+      </SimpleLayout>
     </>
   )
 }
 
+// export async function getStaticProps() {
+//   return {
+//     props: {
+//       articles: (await getAllArticles()).map(({ component, ...meta }) => meta),
+//     },
+//   }
+// }
+
+
+// Here we can use a cache mechanism to store the result of getAllArticles to avoid unnecessary calls.
 export async function getStaticProps() {
-  return {
-    props: {
-      articles: (await getAllArticles()).map(({ component, ...meta }) => meta),
-    },
+  try {
+    const articles = await getAllArticles();
+    return {
+      props: {
+        articles: articles.map(({ component, ...meta }) => meta),
+      },
+    }
+  } catch (error) {
+    console.error(error);
+    return {
+      props: {
+        articles: [],
+      },
+    }
   }
 }

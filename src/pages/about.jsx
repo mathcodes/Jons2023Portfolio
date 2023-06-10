@@ -71,10 +71,10 @@ export default function About() {
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-              Born in South Africa, raised in Philadelphia, and now in North Carolina where I spend my days coding, collaborating, training, and networking to become the best full-stack web developer on your next team!
+                Born in South Africa, raised in Philadelphia, and now in North Carolina where I spend my days coding, collaborating, training, and networking to become the best full-stack web developer on your next team!
               </p>
               <p>
-                 Front-End Developer with experience working with Javascript, Typescript, React and React Native enhancing and creating websites for clients. As a teacher for 10 years, I also provide guidance and content to clients and the community, bringing clarity to confusion on a daily basis.
+                Front-End Developer with experience working with Javascript, Typescript, React and React Native enhancing and creating websites for clients. As a teacher for 10 years, I also provide guidance and content to clients and the community, bringing clarity to confusion on a daily basis.
               </p>
               <p>
                 My ongoing drive to learn and adapt along with my passion for coding, education, gaming, technology, science and green energy have helped me become an irreplaceable asset for the companies and teammates I’ve had the pleasure working with over the years.
@@ -104,6 +104,22 @@ export default function About() {
                 jon@jonchristie.net
               </SocialLink>
             </ul>
+          </div>
+          <div className="lg:row-span-2">
+            <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+              Skills
+            </h1>
+            <div className="flex flex-wrap justify-center">
+              <img src="https://raw.githubusercontent.com/mathcodes/Jons2023Portfolio/main/src/images/logos/openai.svg" alt="OpenAI" width="40px" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" alt="HTML 5" width="40px" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS 3" width="40px" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS" width="40px" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" alt="Git" width="40px" />
+              <img src="https://ih1.redbubble.net/image.4697323204.3036/mp,504x498,matte,f8f8f8,t-pad,600x600,f8f8f8.jpg" alt="OpenAI API" width="40px" height="40px" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Natural_Language_Processing_Logo.svg" alt="NLP" width="40px" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Machine_learning_icon.png" alt="ML" width="40px" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Artificial_intelligence_icon.png" alt="AI" width="40px" />
+            </div>
           </div>
         </div>
       </Container>

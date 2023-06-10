@@ -44,9 +44,8 @@ export default function Speaking() {
             In addition to my technical expertise, I have a passion for teaching and providing guidance to clients and the community. I strive to bring clarity to confusion on a daily basis. My commitment to learning and adapting, along with my deep interests in gaming, technology, science, and green energy, have made me an invaluable asset to the teams I&apos;ve worked with.
             <br />
             <br />
-            If you are interested in discussing potential projects, employment opportunities, or simply want to connect, please feel free to reach out. You can contact me at [Your Contact Information]. I am eager to explore how I can contribute my skills, knowledge, and enthusiasm to your organization&apos;s success.
+            If you are interested in discussing potential projects, employment opportunities, or simply want to connect, please feel free to reach out. You can contact me using the information provided below. I am eager to explore how I can contribute my skills, knowledge, and enthusiasm to your organization&apos;s success.
           </h6>
-
         </div>
       </SimpleLayout>
       <section class=" ">
