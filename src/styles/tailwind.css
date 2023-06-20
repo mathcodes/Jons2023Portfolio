@@ -5,3 +5,13 @@
 
 
 
+@layer base {
+  .group {
+    /* // Override the default text color */
+    color: #000;
+    /* // Override the hover state text color */
+    &:hover {
+      color: #fff;
+    }
+  }
+}
