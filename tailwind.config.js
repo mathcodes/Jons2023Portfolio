@@ -3,6 +3,12 @@ module.exports = {
   content: ['./src/**/*.{js,jsx}'],
   darkMode: 'class',
   plugins: [require('@tailwindcss/typography')],
+  variants: {
+    extend: {
+      opacity: ['responsive', 'group-hover', 'focus-within', 'hover', 'focus'],
+      display: ['group-hover']
+    },
+  },
   theme: {
     fontSize: {
       xs: ['0.8125rem', { lineHeight: '1.5rem' }],

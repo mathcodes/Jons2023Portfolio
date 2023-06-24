@@ -91,14 +91,15 @@ export default function Projects() {
 
               </div>
               <Card.Description>{project.description}</Card.Description>
-              <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition dark:text-zinc-200">
-                <span className="ml-2 inline-flex flex-shrink-0 items-center rounded-full bg-none px-1.5 py-0.5 text-xs font-medium ring-1 ring-inset border hover:border-white text-black ring-black hover:scale-105 bg-gray-200 hover:bg-[(229, 231, 235)] hover:text-white">
-                  <a href={project.linkGH}>GitHub</a>
-                </span>
-                <span className="ml-2 inline-flex flex-shrink-0 items-center rounded-full bg-green-500 px-1.5 py-0.5 text-xs font-medium text-black ring-1 ring-inset border border-white hover:border-green-400 ring-green-600/20 hover:text-white hover:bg-green-600">
-                  <a href={project.linkLive}>Live</a>
-                </span>
-              </p>
+              <div className="relative z-10 mt-2 flex flex-row xs:flex-col justify-center space-x-4 space-y-2 xs:space-y-2 text-sm font-medium text-zinc-400 transition dark:text-zinc-200">
+  <a href={project.linkGH} className="m-0 inline-flex h-8 items-center justify-center w-full rounded-full px-1.5 py-0.5 text-xs font-medium ring-1 ring-inset border text-black ring-black hover:scale-105 hover:border-white bg-gray-200 hover:bg-gray-400 hover:text-white">
+    GitHub
+  </a>
+  <a href={project.linkLive} className="m-0 inline-flex h-8 items-center justify-center w-full rounded-full px-1.5 py-0 text-xs font-medium text-black ring-1 ring-inset border border-white ring-green-600/20 hover:border-[#2ae4eb] hover:text-white bg-[#2ae4eb] hover:bg-[#47cdd2]">
+    Live
+  </a>
+</div>
+
             </Card>
           ))}
         </ul>

@@ -7,6 +7,7 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import avatarImage from '@/images/avatar.png'
+import avatarImage2 from '@/images/avatar2.png'
 
 function CloseIcon(props) {
   return (
@@ -225,23 +226,43 @@ function AvatarContainer({ className, ...props }) {
 
 function Avatar({ large = false, className, ...props }) {
   return (
-    <Link
-      href="/"
-      aria-label="Home"
-      className={clsx(className, 'pointer-events-auto')}
-      {...props}
-    >
-      <Image
-        src={avatarImage}
-        alt=""
-        sizes={large ? '4rem' : '2.25rem'}
-        className={clsx(
-          'rounded-full bg-zinc-100 object-cover dark:bg-zinc-800',
-          large ? 'h-16 w-16' : 'h-9 w-9'
-        )}
-        priority
-      />
-    </Link>
+
+<div className="relative group">
+  <Link
+    href="/"
+    aria-label="Home"
+    className={clsx(className, 'pointer-events-auto', large ? 'h-16 w-16 ' : 'h-9 w-9')}
+    {...props}
+  >
+    {/* <Image
+      src={avatarImage}
+      alt=""
+      sizes={large ? '4rem' : '2.25rem'}
+      className={clsx(
+        'rounded-full bg-zinc-100 object-cover absolute top-2 left-2 dark:bg-zinc-800 h-3/4 w-3/4  transition-width duration-200 transition-opacity duration-1000 group-hover:opacity-0',  large ? 'h-16 w-16 ' : 'h-9 w-9'
+      )}
+      id="avatarImg"
+      priority
+    /> */}
+    <Image
+  src={avatarImage}
+  alt=""
+  sizes={large ? '4rem' : '2.25rem'}
+  className={clsx(
+    'rounded-full bg-zinc-100 object-cover absolute   dark:bg-zinc-800 h-3/4 w-3/4  transition-width duration-200 transition-opacity duration-1000 group-hover:opacity-0 flip-on-hover',  large ? 'h-16 w-16 ' : 'h-9 w-9'
+  )}
+  id="avatarImg"
+  priority
+/>
+
+    <Image
+      src={avatarImage2}
+      alt="Hover image"
+      sizes={large ? '4rem' : '2.25rem'}
+      className="rounded-full object-cover absolute top-0 left-0 transition-opacity duration-1000 opacity-0 group-hover:opacity-100"
+    />
+  </Link>
+</div>
   )
 }
 

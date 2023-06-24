@@ -15,3 +15,12 @@
     }
   }
 }
+
+.flip-on-hover {
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.flip-on-hover:hover {
+  transform: rotateY(180deg);
+}
