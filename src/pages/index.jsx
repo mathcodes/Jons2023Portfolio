@@ -15,6 +15,7 @@ import {
 import gncoLogo from '@/images/logos/gncoLogo.png'
 import scbLogo from '@/images/logos/scbLogo.png'
 import te21Logo from '@/images/logos/te21Logo.jpg'
+import askSageLogo from '@/images/logos/askSageLogo.png'
 import pivotousLogo from '@/images/logos/pivotousLogo.png'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
@@ -94,6 +95,16 @@ function SocialLink({ icon: Icon, ...props }) {
 
 function Resume() {
   let resume = [
+    {
+      company: 'AskSage.ai',
+      title: 'Frontend Developer',
+      logo: askSageLogo,
+      start: '2023',
+      end: {
+        label: 'Present',
+        dateTime: new Date().getFullYear(),
+      },
+    },
     {
       company: 'Gladis & Co.',
       title: 'Web Developer',
