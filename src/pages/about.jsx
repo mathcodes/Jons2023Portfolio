@@ -10,7 +10,7 @@ import {
   LinkedInIcon,
   TwitterIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/avatar.png'
+import avatarImage from '@/images/avatar.png'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
@@ -45,7 +45,7 @@ function MailIcon(props) {
   )
 }
 
-export default function About() {
+export default function About({large = false}) {
   return (
     <>
       <Head>
@@ -59,18 +59,16 @@ export default function About() {
         <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
           <div className="lg:pl-20">
             <div className="max-w-xs px-2.5 lg:max-w-none">
-              {/* <Image
-                src={portraitImage}
-                alt=""
-                sizes="(min-width: 1024px) 32rem, 20rem"
-                className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
-              /> */}
-              <Image
-                src={portraitImage}
-                alt=""
-                sizes="(min-width: 1024px) 32rem, 20rem"
-                className="aspect-circle rotate-3 rounded-2xl bg-none object-cover  "
-              />
+
+            <Image
+  src={avatarImage}
+  alt=""
+  className={clsx(
+    'rounded-full bg-zinc-100 object-cover    dark:bg-zinc-800 h-40 w-40  duration-200 transition-opacity duration-1000 flip-on-hover',  large ? 'h-20 w-20 ' : 'h-15 w-15'
+  )}
+  id="avatarImg"
+  priority
+/>
             </div>
           </div>
           <div className="lg:order-first lg:row-span-2">
@@ -119,25 +117,25 @@ export default function About() {
             Skills
           </h1>
           <div className="flex flex-wrap space-x-2  justify-center">
-            <Image src="https://Image.shields.io/badge/-Express-black?style=flat&logo=express&logoColor=white" alt="Express" style={{ height: "1.5rem" }} className="my-2" />
-            <Image src="https://Image.shields.io/badge/-ReactJS-blue?style=flat&logo=react&logoColor=white" alt="ReactJS" style={{ height: "1.5rem" }} className="my-2" />
-            <Image src="https://Image.shields.io/badge/-MongoDB-green?style=flat&logo=mongodb&logoColor=white" alt="MongoDB" style={{ height: "1.5rem" }} className="my-2" />
-            <Image src="https://Image.shields.io/badge/-React_Native-61DAFB?style=flat&logo=react&logoColor=white" alt="React-Native" style={{ height: "1.5rem" }} className="my-2" />
-            <Image src="https://Image.shields.io/badge/-TypeScript-blue?style=flat&logo=typescript&logoColor=white" alt="TypeScript" style={{ height: "1.5rem" }} className="my-2" />
-            <Image src="https://Image.shields.io/badge/-JavaScript-yellow?style=flat&logo=javascript&logoColor=white" alt="JavaScript" style={{ height: "1.5rem" }} className="my-2" />
-            <Image src="https://Image.shields.io/badge/-HTML-orange?style=flat&logo=html5&logoColor=white" alt="HTML" style={{ height: "1.5rem" }} className="my-2" />
-            <Image src="https://Image.shields.io/badge/-CSS-blue?style=flat&logo=css3&logoColor=white" alt="CSS" style={{ height: "1.5rem" }} className="my-2" />
-            <Image src="https://Image.shields.io/badge/-Python-blue?style=flat&logo=python&logoColor=white" alt="Python" style={{ height: "1.5rem" }} className="my-2" />
-            <Image src="https://Image.shields.io/badge/-Django-green?style=flat&logo=django&logoColor=white" alt="Django" style={{ height: "1.5rem" }} className="my-2" />
-            <Image src="https://Image.shields.io/badge/-Flask-black?style=flat&logo=flask&logoColor=white" alt="Flask" style={{ height: "1.5rem" }} className="my-2" />
-            <Image src="https://Image.shields.io/badge/-SQL-blue?style=flat&logo=sql&logoColor=white" alt="SQL" style={{ height: "1.5rem" }} className="my-2" />
-            <Image src="https://Image.shields.io/badge/-noSQL-green?style=flat" alt="noSQL" style={{ height: "1.5rem" }} className="my-2" />
-            <Image src="https://Image.shields.io/badge/-OpenAI_API-blue?style=flat" alt="OpenAI-API" style={{ height: "1.5rem" }} className="my-2" />
-            <Image src="https://Image.shields.io/badge/-UI_UX-purple?style=flat" alt="UI/UX" style={{ height: "1.5rem" }} className="my-2" />
-            <Image src="https://Image.shields.io/badge/-Git-orange?style=flat&logo=git&logoColor=white" alt="Git" style={{ height: "1.5rem" }} className="my-2" />
-            <Image src="https://Image.shields.io/badge/-Jest-red?style=flat&logo=jest&logoColor=white" alt="Jest" style={{ height: "1.5rem" }} className="my-2" />
-            <Image src="https://Image.shields.io/badge/-React_Testing_Library-purple?style=flat" alt="React-Testing-Library" style={{ height: "1.5rem" }} className="my-2" />
-            <Image src="https://Image.shields.io/badge/-Open_Source-brightgreen?style=flat" alt="Open-Source" style={{ height: "1.5rem" }} className="my-2" />
+            <img src="https://img.shields.io/badge/-Express-black?style=flat&logo=express&logoColor=white" alt="Express" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
+            <img src="https://img.shields.io/badge/-ReactJS-blue?style=flat&logo=react&logoColor=white" alt="ReactJS" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
+            <img src="https://img.shields.io/badge/-MongoDB-green?style=flat&logo=mongodb&logoColor=white" alt="MongoDB" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
+            <img src="https://img.shields.io/badge/-React_Native-61DAFB?style=flat&logo=react&logoColor=white" alt="React-Native" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
+            <img src="https://img.shields.io/badge/-TypeScript-blue?style=flat&logo=typescript&logoColor=white" alt="TypeScript" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
+            <img src="https://img.shields.io/badge/-JavaScript-yellow?style=flat&logo=javascript&logoColor=white" alt="JavaScript" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
+            <img src="https://img.shields.io/badge/-HTML-orange?style=flat&logo=html5&logoColor=white" alt="HTML" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
+            <img src="https://img.shields.io/badge/-CSS-blue?style=flat&logo=css3&logoColor=white" alt="CSS" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
+            <img src="https://img.shields.io/badge/-Python-blue?style=flat&logo=python&logoColor=white" alt="Python" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
+            <img src="https://img.shields.io/badge/-Django-green?style=flat&logo=django&logoColor=white" alt="Django" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
+            <img src="https://img.shields.io/badge/-Flask-black?style=flat&logo=flask&logoColor=white" alt="Flask" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
+            <img src="https://img.shields.io/badge/-SQL-blue?style=flat&logo=sql&logoColor=white" alt="SQL" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
+            <img src="https://img.shields.io/badge/-noSQL-green?style=flat" alt="noSQL" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
+            <img src="https://img.shields.io/badge/-OpenAI_API-blue?style=flat" alt="OpenAI-API" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
+            <img src="https://img.shields.io/badge/-UI_UX-purple?style=flat" alt="UI/UX" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
+            <img src="https://img.shields.io/badge/-Git-orange?style=flat&logo=git&logoColor=white" alt="Git" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
+            <img src="https://img.shields.io/badge/-Jest-red?style=flat&logo=jest&logoColor=white" alt="Jest" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
+            <img src="https://img.shields.io/badge/-React_Testing_Library-purple?style=flat" alt="React-Testing-Library" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
+            <img src="https://img.shields.io/badge/-Open_Source-brightgreen?style=flat" alt="Open-Source" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
 
           </div>
         </div>

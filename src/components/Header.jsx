@@ -249,18 +249,13 @@ function Avatar({ large = false, className, ...props }) {
   alt=""
   sizes={large ? '4rem' : '2.25rem'}
   className={clsx(
-    'rounded-full bg-zinc-100 object-cover absolute   dark:bg-zinc-800 h-3/4 w-3/4  transition-width duration-200 transition-opacity duration-1000 group-hover:opacity-0 flip-on-hover',  large ? 'h-16 w-16 ' : 'h-9 w-9'
+    'rounded-full bg-zinc-100 object-cover    dark:bg-zinc-800 h-3/4 w-3/4  duration-200 transition-opacity duration-1000 flip-on-hover',  large ? 'h-16 w-16 ' : 'h-9 w-9'
   )}
   id="avatarImg"
   priority
 />
 
-    <Image
-      src={avatarImage2}
-      alt="Hover image"
-      sizes={large ? '4rem' : '2.25rem'}
-      className="rounded-full object-cover absolute top-0 left-0 transition-opacity duration-1000 opacity-0 group-hover:opacity-100"
-    />
+
   </Link>
 </div>
   )
