@@ -52,7 +52,7 @@ export default function About() {
         <title>Jon Christie</title>
         <meta
           name="description"
-          content="I’m Jon Christie. I live in Raleigh, North Carolina and work as a Front-End Developer at a small company called 3Advance."
+          content="I&apos;m Jon Christie. I live in Raleigh, North Carolina and work as a Front-End Developer at a small company called 3Advance."
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
