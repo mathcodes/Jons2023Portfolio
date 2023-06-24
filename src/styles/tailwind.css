@@ -3,7 +3,9 @@
 @import './prism.css';
 @import 'tailwindcss/utilities';
 
-
+* {
+  font-family: 'Inter', sans-serif;
+}
 
 @layer base {
   .group {

@@ -70,7 +70,7 @@ function MoonIcon(props) {
   )
 }
 
-function MobileNavItem({ href, children }) {
+export function MobileNavItem({ href, children }) {
   return (
     <li>
       <Popover.Button as={Link} href={href} className="block py-2">

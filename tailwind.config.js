@@ -1,15 +1,23 @@
 /** @type {import('tailwindcss').Config} */
+
+
+
 module.exports = {
   content: ['./src/**/*.{js,jsx}'],
   darkMode: 'class',
   plugins: [require('@tailwindcss/typography')],
   variants: {
     extend: {
+      textColor: ['hover'],
       opacity: ['responsive', 'group-hover', 'focus-within', 'hover', 'focus'],
-      display: ['group-hover']
+      display: ['group-hover'],
+      colors: {
+        'custom-blue': '#47cdd2',
+      },
     },
   },
   theme: {
+    fontFamily: {Inter: ['Inter', 'sans-serif']},
     fontSize: {
       xs: ['0.8125rem', { lineHeight: '1.5rem' }],
       sm: ['0.875rem', { lineHeight: '1.5rem' }],
@@ -25,6 +33,7 @@ module.exports = {
       '8xl': ['6rem', { lineHeight: '1' }],
       '9xl': ['8rem', { lineHeight: '1' }],
     },
+
     typography: (theme) => ({
       invert: {
         css: {
@@ -305,5 +314,6 @@ module.exports = {
         },
       },
     }),
+
   },
 }

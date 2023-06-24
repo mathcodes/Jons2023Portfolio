@@ -78,15 +78,15 @@ export default function About() {
               Jon Christie
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-              <p>
-                Born in South Africa, raised in Philadelphia, and now in North Carolina where I spend my days coding, collaborating, training, and networking to become the best full-stack web developer on your next team!
-              </p>
-              <p>
-                Front-End Developer with experience working with Javascript, Typescript, React and React Native enhancing and creating websites for clients. As a teacher for 10 years, I also provide guidance and content to clients and the community, bringing clarity to confusion on a daily basis.
-              </p>
-              <p>
-                My ongoing drive to learn and adapt along with my passion for coding, education, gaming, technology, science and green energy have helped me become an irreplaceable asset for the companies and teammates I’ve had the pleasure working with over the years.
-              </p>
+            <p>
+  Born in <span className="hover:text-[#47cdd2]">South Africa</span>, raised in <span className="hover:text-[#47cdd2]">Philadelphia</span>, and now in <span className="hover:text-[#47cdd2]">North Carolina</span> where I spend my days coding, collaborating, training, and networking to become the best <span className="hover:text-[#47cdd2]">Full-Stack Developer</span> on your next team!
+</p>
+<p>
+  As a <span className="hover:text-[#47cdd2]">Front-End Developer</span>, I've spent most of my time building with <span className="hover:text-[#47cdd2]">Javascript</span>, <span className="hover:text-[#47cdd2]">Typescript</span>, <span className="hover:text-[#47cdd2]">React</span>, and <span className="hover:text-[#47cdd2]">React Native</span> enhancing and creating websites for clients. As a teacher for 10 years, I also provide guidance and content to clients and the community, bringing clarity to confusion on a daily basis. My <span className="hover:text-[#47cdd2]">Back-End</span> Skills are ready-to-go if you're looking for a <span className="hover:text-[#47cdd2]">MERN</span> master or would rather utilize the unrelenting power of <span className="hover:text-[#47cdd2]">Python</span> in the back.
+</p>
+<p>
+  My ongoing drive to learn and adapt along with my passion for <span className="hover:text-[#47cdd2]">coding</span>, <span className="hover:text-[#47cdd2]">education</span>, <span className="hover:text-[#47cdd2]">gaming</span>, <span className="hover:text-[#47cdd2]">technology</span>, <span className="hover:text-[#47cdd2]">science</span>, and <span className="hover:text-[#47cdd2]">green energy</span> has helped me become an irreplaceable asset for the companies and teammates I’ve had the pleasure of working with over the years.
+</p>
 
             </div>
           </div>

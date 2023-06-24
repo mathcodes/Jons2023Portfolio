@@ -23,6 +23,7 @@ import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
 
 import { formatDate } from '@/lib/formatDate'
+import Slideshow from '@/components/SlideShow'
 
 
 
@@ -257,6 +258,7 @@ export default function Home({ articles }) {
         </div>
       </Container>
       <Photos />
+      <Slideshow />
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
