@@ -21,7 +21,7 @@ const Slideshow = () => {
 
   return (
     <div className="flex flex-col content-center items-center justify-center">
-    <div className="relative h-60 md:w-80 mt-12">
+    <div className="relative h-40 w-60 md:w-80 md:h-60 mt-12">
       {slides.map((slide, index) => (
         <div
         key={index}
