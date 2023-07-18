@@ -233,7 +233,7 @@ export default function Home({ articles }) {
           name="description"
           content="Front-End Developer with experience working with Javascript, Typescript, React and React Native enhancing and creating websites for clients. As a teacher for 10 years, I also provide guidance and content to clients and the community, bringing clarity to confusion on a daily basis.
 
-          My ongoing drive to learn and adapt along with my passion for coding, education, gaming, technology, science and green energy have helped me become an irreplaceable asset for the companies and teammates I’ve had the pleasure working with over the years. I&srq;m always looking for new challenges and opportunities to grow and learn."
+          My ongoing drive to learn and adapt along with my passion for coding, education, gaming, technology, science and green energy have helped me become an irreplaceable asset for the companies and teammates I’ve had the pleasure working with over the years. I&rdquo;m always looking for new challenges and opportunities to grow and learn."
         />
       </Head>
       <Container className="mt-9">
