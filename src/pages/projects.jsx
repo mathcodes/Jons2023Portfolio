@@ -8,9 +8,9 @@ import { SimpleLayout } from '@/components/SimpleLayout';
 // import logoOpenShuttle from '@/images/logos/open-shuttle.svg';
 // import logoPlanetaria from '@/images/logos/planetaria.svg';
 // import logoReact from '@/images/logos/react.svg';
-import cfd from '@/images/projects/cfd.png';
+import cfd from '../images/projects/cfd.png';
 import askSage from '../images/projects/AskSage.png';
-import gptfordevs from '@/images/projects/ChatGPT.png';
+import gptfordevs from '../images/projects/ChatGPT.png';
 // // import figma, html, css, react, firebase, GitHub, tailwind
 // import Figma from '@/images/logos/figma.svg';
 // import HTML from '@/images/logos/html.svg';
