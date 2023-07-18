@@ -245,11 +245,10 @@ export default function Home({ articles }) {
             I’m Jon, a software developer and trainer looking for work!
           </p>
           <div className="mt-6 flex gap-6">
-            <SocialLink
-              href="https://twitter.com/jcircle9"
+            justify-center flex h-full href="https://twitter.com/jcircle9"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
-            />
+            </div>
             <SocialLink
               href="https://instagram.com"
               aria-label="Follow on Instagram"
@@ -266,10 +265,10 @@ export default function Home({ articles }) {
               icon={LinkedInIcon}
             />
           </div>
-        </div>
+
       </Container>
-      <Photos />
-      <Slideshow />
+      {/* <Photos /> */}
+      {/* <Slideshow /> */}
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
