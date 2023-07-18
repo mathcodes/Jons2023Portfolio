@@ -245,12 +245,14 @@ export default function Home({ articles }) {
             I’m Jon, a software developer and trainer looking for work!
           </p>
           <div className="mt-6 flex gap-6">
-            justify-center flex h-full href="https://twitter.com/jcircle9"
+
+            <SocialLink
+            href="https://twitter.com/jcircle9"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
-            </div>
+/>
             <SocialLink
-              href="https://instagram.com"
+            href="https://instagram.com"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
             />
@@ -264,6 +266,7 @@ export default function Home({ articles }) {
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
+          </div>
           </div>
 
       </Container>
