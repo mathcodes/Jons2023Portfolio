@@ -24,7 +24,6 @@ import image4 from '../images/photos/image-4.jpg'
 import image5 from '../images/photos/image-5.jpg'
 
 import { formatDate } from '@/lib/formatDate'
-import Slideshow from '@/components/SlideShow'
 
 
 
