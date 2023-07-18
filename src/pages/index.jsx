@@ -74,7 +74,7 @@ function SocialLink({ icon: Icon, ...props }) {
 //         <MailIcon className="h-6 w-6 flex-none" />
 //         <span className="ml-3">Stay up to date</span>
 //       </h2>
-//       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+//       <p className="mt-2 text-sm text-zinc-800 dark:text-zinc-400">
 //         Get notified when I publish something new, and unsubscribe at any time.
 //       </p>
 //       <div className="mt-6 flex">
@@ -233,7 +233,7 @@ export default function Home({ articles }) {
           name="description"
           content="Front-End Developer with experience working with Javascript, Typescript, React and React Native enhancing and creating websites for clients. As a teacher for 10 years, I also provide guidance and content to clients and the community, bringing clarity to confusion on a daily basis.
 
-          My ongoing drive to learn and adapt along with my passion for coding, education, gaming, technology, science and green energy have helped me become an irreplaceable asset for the companies and teammates I’ve had the pleasure working with over the years. I’m always looking for new challenges and opportunities to grow and learn."
+          My ongoing drive to learn and adapt along with my passion for coding, education, gaming, technology, science and green energy have helped me become an irreplaceable asset for the companies and teammates I’ve had the pleasure working with over the years. I&srq;m always looking for new challenges and opportunities to grow and learn."
         />
       </Head>
       <Container className="mt-9">
@@ -241,7 +241,7 @@ export default function Home({ articles }) {
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             Software Developer & Trainer.
           </h1>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          <p className="mt-6 text-base text-zinc-800 dark:text-zinc-400">
             I’m Jon, a software developer and trainer looking for work!
           </p>
           <div className="mt-6 flex gap-6">
