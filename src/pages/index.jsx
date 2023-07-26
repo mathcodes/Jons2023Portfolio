@@ -175,11 +175,11 @@ function Resume() {
       </ol>
       <a href="/files/Jon_Christie_Resume.pdf" download="Jon_Christie_CV.pdf" >
 
-
-      <Button variant="secondary" className="group mt-6 w-full">
+                <div className="group stroke-red-600 transition group-active:stroke-red-600 dark:group-hover:stroke-red-500 dark:group-active:stroke-red-500">
+      <Button variant="secondary" className="mt-6 w-full relative border stroke-red-600 border-red-600 text-white font-bold transition group-active:stroke-red-600 dark:group-hover:stroke-red-900 dark:group-active:stroke-red-500">
         Download CV
-        <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
-      </Button></a>
+        <ArrowDownIcon className="h-4 w-4 stroke-red-600 transition group-active:stroke-red-600 dark:group-hover:stroke-red-500 dark:group-active:stroke-red-500" />
+      </Button></div></a>
     </div>
   )
 }
