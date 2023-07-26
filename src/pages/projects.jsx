@@ -80,7 +80,7 @@ export default function Projects() {
               <div className="relative z-10 flex items-center justify-center shadow-md ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:ring-0">
                 <Image src={project.image} alt="" unoptimized />
               </div>
-              <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+              <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100 font-bold font-bold">
                 {project.linkLive ? (
                   <Card.Link href={project.linkLive}>{project.name}</Card.Link>
                 ) : (
@@ -91,7 +91,7 @@ export default function Projects() {
 
               </div>
               <Card.Description>{project.description}</Card.Description>
-              <div className="relative z-10 mt-2 flex flex-row xs:flex-col justify-center space-x-4 space-y-2 xs:space-y-2 text-sm font-medium text-zinc-400 transition dark:text-zinc-200">
+              <div className="relative z-10 mt-2 flex flex-row xs:flex-col justify-center space-x-4 space-y-2 xs:space-y-2 text-sm font-medium text-zinc-800 transition dark:text-zinc-200">
   <a href={project.linkGH} className="m-0 inline-flex h-8 items-center justify-center w-full rounded-full px-1.5 py-0.5 text-xs font-medium ring-1 ring-inset border text-black ring-black hover:scale-105 hover:border-white bg-gray-200 hover:bg-gray-400 hover:text-white">
     GitHub
   </a>

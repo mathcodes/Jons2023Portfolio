@@ -51,14 +51,14 @@ export function ArticleLayout({
             )}
             <article>
               <header className="flex flex-col">
-                <h1 className="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+                <h1 className="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 font-bold font-bold sm:text-5xl">
                   {meta.title}
                 </h1>
                 <time
                   dateTime={meta.date}
-                  className="order-first flex items-center text-base text-zinc-400 dark:text-zinc-500"
+                  className="order-first flex items-center text-base text-zinc-800 dark:text-zinc-100 font-bold font-bold"
                 >
-                  <span className="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500" />
+                  <span className="h-4 w-0.5 rounded-full bg-zinc-200 dark:text-zinc-100 font-bold font-bold" />
                   <span className="ml-3">{formatDate(meta.date)}</span>
                 </time>
               </header>

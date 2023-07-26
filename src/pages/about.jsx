@@ -69,10 +69,10 @@ export default function About() {
             </div>
           </div>
           <div className="lg:order-first lg:row-span-2">
-            <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+            <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 font-bold font-bold sm:text-5xl">
               Jon Christie
             </h1>
-            <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+            <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-100 font-bold">
               <p>
                 Born in <span className="hover:text-[#47cdd2]">South Africa</span>, raised in <span className="hover:text-[#47cdd2]">Philadelphia</span>, and now in <span className="hover:text-[#47cdd2]">North Carolina</span> where I spend my days coding, collaborating, training, and networking to become the best <span className="hover:text-[#47cdd2]">Full-Stack Developer</span> on your next team!
               </p>
@@ -110,7 +110,7 @@ export default function About() {
           </div>
         </div>
         <div className="lg:row-span-2">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 font-bold font-bold sm:text-5xl">
             Skills
           </h1>
           <div className="flex flex-wrap space-x-2  justify-center">

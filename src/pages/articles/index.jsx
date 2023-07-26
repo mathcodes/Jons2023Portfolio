@@ -9,7 +9,7 @@ function Blog({ article }) {
   return (
     <article className="md:grid md:grid-cols-4 md:items-baseline">
       <Card className="md:col-span-3">
-        <Card.Title href={`${article.slug}`} target="_blank">
+        <Card.Title >
           {article.title}
         </Card.Title>
         <Card.Eyebrow
@@ -20,8 +20,8 @@ function Blog({ article }) {
         >
           {formatDate(article.date)}
         </Card.Eyebrow>
-        <Card.Description>{article.description}</Card.Description>
-        <Card.Cta>Read article</Card.Cta>
+        <Card.Description className="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-800 dark:text-zinc-100 font-bold font-bold">{article.description}</Card.Description>
+        <Card.Cta href={`${article.slug}`} target="_blank">Read article</Card.Cta>
       </Card>
       <Card.Eyebrow
         as="time"

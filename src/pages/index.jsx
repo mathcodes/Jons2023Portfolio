@@ -69,11 +69,11 @@ function SocialLink({ icon: Icon, ...props }) {
 //       action="/thank-you"
 //       className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
 //     >
-//       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+//       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100 font-bold font-bold">
 //         <MailIcon className="h-6 w-6 flex-none" />
 //         <span className="ml-3">Stay up to date</span>
 //       </h2>
-//       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+//       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-100 font-bold">
 //         Get notified when I publish something new, and unsubscribe at any time.
 //       </p>
 //       <div className="mt-6 flex">
@@ -82,7 +82,7 @@ function SocialLink({ icon: Icon, ...props }) {
 //           placeholder="Email address"
 //           aria-label="Email address"
 //           required
-//           className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
+//           className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-100 font-bold focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
 //         />
 //         <Button type="submit" className="ml-4 flex-none">
 //           Join
@@ -129,7 +129,7 @@ function Resume() {
 
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100 font-bold font-bold">
 
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
@@ -147,16 +147,16 @@ function Resume() {
             </div>
             <dl className="flex flex-auto flex-wrap gap-x-2">
               <dt className="sr-only">Company</dt>
-              <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
+              <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100 font-bold font-bold">
                 {role.company}
               </dd>
               <dt className="sr-only">Role</dt>
-              <dd className="text-xs text-zinc-500 dark:text-zinc-400">
+              <dd className="text-xs text-zinc-500 dark:text-zinc-100 font-bold">
                 {role.title}
               </dd>
               <dt className="sr-only">Date</dt>
               <dd
-                className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
+                className="ml-auto text-xs text-zinc-800 dark:text-zinc-100 font-bold font-bold"
                 aria-label={`${role.start.label ?? role.start} until ${
                   role.end.label ?? role.end
                 }`}
@@ -227,10 +227,10 @@ export default function Home({ articles }) {
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-00 dark:text-zinc-100 sm:text-5xl">
+          <h1 className="text-4xl font-bold tracking-tight text-zinc-00 dark:text-zinc-100 font-bold font-bold sm:text-5xl">
             Software Developer & Trainer.
           </h1>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-100 font-bold">
             I’m Jon, a software developer and trainer looking for work!
           </p>
           <div className="mt-6 flex gap-6">

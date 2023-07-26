@@ -26,7 +26,7 @@ export function Footer() {
                 <NavLink href="/blog">Blog</NavLink>
                 <NavLink href="/contact">Contact</NavLink>
               </div>
-              <p className="text-sm text-zinc-400 dark:text-zinc-500">
+              <p className="text-sm text-zinc-800 dark:text-zinc-100 font-bold font-bold">
                 &copy; {new Date().getFullYear()} Jon Christie. All rights
                 reserved.
               </p>
