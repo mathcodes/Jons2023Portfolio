@@ -8,9 +8,9 @@ import { SimpleLayout } from '@/components/SimpleLayout';
 // import logoOpenShuttle from '@/images/logos/open-shuttle.svg';
 // import logoPlanetaria from '@/images/logos/planetaria.svg';
 // import logoReact from '@/images/logos/react.svg';
-import cfd from '../images/projects/cfd.png';
+import cfd from '@/images/projects/cfd.png';
 import askSage from '../images/projects/AskSage.png';
-import gptfordevs from '../images/projects/ChatGPT.png';
+import gptfordevs from '@/images/projects/ChatGPT.png';
 // // import figma, html, css, react, firebase, GitHub, tailwind
 // import Figma from '@/images/logos/figma.svg';
 // import HTML from '@/images/logos/html.svg';
@@ -81,22 +81,26 @@ export default function Projects() {
                 <Image src={project.image} alt="" unoptimized />
               </div>
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                {project.name}
+                {project.linkLive ? (
+                  <Card.Link href={project.linkLive}>{project.name}</Card.Link>
+                ) : (
+                  project.name
+                )}
               </h2>
               <div>
 
               </div>
               <Card.Description>{project.description}</Card.Description>
-              <div className="relative z-10 mt-2 flex flex-row justify-center space-x-4 space-y-0 text-sm font-medium text-zinc-400 transition dark:text-zinc-200">
-                <a href={project.linkGH} className="m-0 inline-flex h-8 items-center justify-center rounded-full px-1.5 py-0.5 text-xs font-medium w-20 ring-1 ring-inset border text-black ring-black hover:scale-105 hover:border-white bg-gray-200 hover:bg-gray-400 hover:text-white">
-                  GitHub
-                </a>
-                <a href={project.linkLive} className="m-0 inline-flex h-8 items-center justify-center rounded-full px-1.5 py-0 text-xs font-medium w-20 text-black ring-1 ring-inset border border-white ring-green-600/20 hover:border-[#2ae4eb] hover:text-white bg-[#2ae4eb] hover:bg-[#47cdd2]">
-                  Live
-                </a>
-              </div>
-            </Card>
+              <div className="relative z-10 mt-2 flex flex-row xs:flex-col justify-center space-x-4 space-y-2 xs:space-y-2 text-sm font-medium text-zinc-400 transition dark:text-zinc-200">
+  <a href={project.linkGH} className="m-0 inline-flex h-8 items-center justify-center w-full rounded-full px-1.5 py-0.5 text-xs font-medium ring-1 ring-inset border text-black ring-black hover:scale-105 hover:border-white bg-gray-200 hover:bg-gray-400 hover:text-white">
+    GitHub
+  </a>
+  <a href={project.linkLive} className="m-0 inline-flex h-8 items-center justify-center w-full rounded-full px-1.5 py-0 text-xs font-medium text-black ring-1 ring-inset border border-white ring-green-600/20 hover:border-[#2ae4eb] hover:text-white bg-[#2ae4eb] hover:bg-[#47cdd2]">
+    Live
+  </a>
+</div>
 
+            </Card>
           ))}
         </ul>
       </SimpleLayout>

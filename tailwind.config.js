@@ -5,20 +5,9 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx}'],
   darkMode: 'class',
-  plugins: [
-    require('postcss-nested'), // Or require('postcss-nesting')
-    require('tailwindcss'),
-    require('autoprefixer'),
-    require('@tailwindcss/typography')
-  ],
-
+  plugins: [require('@tailwindcss/typography')],
   variants: {
     extend: {
-      borderWidth: ['hover'],
-      backgroundColor: ['hover'],
-      textColor: ['hover'],
-      borderColor: ['hover'],
-      scale: ['hover'],
       textColor: ['hover'],
       opacity: ['responsive', 'group-hover', 'focus-within', 'hover', 'focus'],
       display: ['group-hover'],

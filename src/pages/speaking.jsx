@@ -37,8 +37,8 @@ export default function Speaking() {
       </Head>
       <SimpleLayout title="Get in touch today!">
         <div className="container contact" style={{ padding: '20px', maxWidth: `768px` }}>
-          <h1 className="text-4xl font-bold text-zinc-800 dark:text-zinc-200">As a Software Developer & Trainer...</h1>
-          <h6 className="container contact text-zinc-800 transition dark:text-zinc-200" style={{ padding: '20px', maxWidth: `768px` }}>... I am excited to connect with potential opportunities and collaborations. With over a 5+ years of experience as a front-end developer, I have worked extensively with JavaScript, TypeScript, React, React Native, WordPress, SquareSpace, HTML, CSS, PHP, Python and more, including libraries and frameworks   to enhance and create websites for clients.
+          <h1 className="text-4xl font-bold text-zinc-800 dark:text-zinc-5">As a Software Developer & Trainer...</h1>
+          <h6 className="container contact text-zinc-800 transition dark:text-zinc-100" style={{ padding: '20px', maxWidth: `768px` }}>... I am excited to connect with potential opportunities and collaborations. With over a 5+ years of experience as a front-end developer, I have worked extensively with JavaScript, TypeScript, React, React Native, WordPress, SquareSpace, HTML, CSS, PHP, Python and more, including libraries and frameworks   to enhance and create websites for clients.
             <br />
             <br />
             In addition to my technical expertise, I have a passion for teaching and providing guidance to clients and the community. I strive to bring clarity to confusion on a daily basis. My commitment to learning and adapting, along with my deep interests in gaming, technology, science, and green energy, have made me an invaluable asset to the teams I&apos;ve worked with.

@@ -21,7 +21,7 @@ const Slideshow = () => {
 
   return (
     <div className="flex flex-col content-center items-center justify-center">
-      {/* <div className="relative h-40 w-60 md:w-80 md:h-60 mt-12">
+    <div className="relative h-40 w-60 md:w-80 md:h-60 mt-12">
       {slides.map((slide, index) => (
         <div
         key={index}
@@ -39,15 +39,18 @@ const Slideshow = () => {
       ))}
       <br/>
 
-    </div> */}
-      <nav className="mt-6">
-        <div className="my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
-        </div>
-        <div>
-        </div>
-
-      </nav>
     </div>
+    <nav className="mt-6">
+              <div className="my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
+              </div>
+              <div><button
+            className="group rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"
+
+      onClick={nextSlide}>Next slide</button>
+</div>
+
+            </nav>
+      </div>
   );
 }
 

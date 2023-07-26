@@ -12,18 +12,18 @@ import {
   LinkedInIcon,
   TwitterIcon,
 } from '@/components/SocialIcons'
-import gncoLogo from '../images/logos/gncoLogo.png'
-import scbLogo from '../images/logos/scbLogo.png'
-import te21Logo from '../images/logos/te21Logo.jpg'
-import askSageLogo from '../images/logos/askSageLogo.png'
-import pivotousLogo from '../images/logos/pivotousLogo.png'
-import image1 from '../images/photos/image-1.jpg'
-import image2 from '../images/photos/image-2.jpg'
-import image3 from '../images/photos/image-3.jpg'
-import image4 from '../images/photos/image-4.jpg'
-import image5 from '../images/photos/image-5.jpg'
+import gncoLogo from '@/images/logos/gncoLogo.png'
+import scbLogo from '@/images/logos/scbLogo.png'
+import te21Logo from '@/images/logos/te21Logo.jpg'
+import pivotousLogo from '@/images/logos/pivotousLogo.png'
+import image1 from '@/images/photos/image-1.jpg'
+import image2 from '@/images/photos/image-2.jpg'
+import image3 from '@/images/photos/image-3.jpg'
+import image4 from '@/images/photos/image-4.jpg'
+import image5 from '@/images/photos/image-5.jpg'
 
 import { formatDate } from '@/lib/formatDate'
+import Slideshow from '@/components/SlideShow'
 
 
 
@@ -73,7 +73,7 @@ function SocialLink({ icon: Icon, ...props }) {
 //         <MailIcon className="h-6 w-6 flex-none" />
 //         <span className="ml-3">Stay up to date</span>
 //       </h2>
-//       <p className="mt-2 text-sm text-zinc-800 dark:text-zinc-400">
+//       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
 //         Get notified when I publish something new, and unsubscribe at any time.
 //       </p>
 //       <div className="mt-6 flex">
@@ -94,16 +94,6 @@ function SocialLink({ icon: Icon, ...props }) {
 
 function Resume() {
   let resume = [
-    {
-      company: 'AskSage.ai',
-      title: 'Frontend Developer',
-      logo: askSageLogo,
-      start: '2023',
-      end: {
-        label: 'Present',
-        dateTime: new Date().getFullYear(),
-      },
-    },
     {
       company: 'Gladis & Co.',
       title: 'Web Developer',
@@ -232,26 +222,25 @@ export default function Home({ articles }) {
           name="description"
           content="Front-End Developer with experience working with Javascript, Typescript, React and React Native enhancing and creating websites for clients. As a teacher for 10 years, I also provide guidance and content to clients and the community, bringing clarity to confusion on a daily basis.
 
-          My ongoing drive to learn and adapt along with my passion for coding, education, gaming, technology, science and green energy have helped me become an irreplaceable asset for the companies and teammates I’ve had the pleasure working with over the years. I&rdquo;m always looking for new challenges and opportunities to grow and learn."
+          My ongoing drive to learn and adapt along with my passion for coding, education, gaming, technology, science and green energy have helped me become an irreplaceable asset for the companies and teammates I’ve had the pleasure working with over the years. I’m always looking for new challenges and opportunities to grow and learn."
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+          <h1 className="text-4xl font-bold tracking-tight text-zinc-00 dark:text-zinc-100 sm:text-5xl">
             Software Developer & Trainer.
           </h1>
-          <p className="mt-6 text-base text-zinc-800 dark:text-zinc-400">
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             I’m Jon, a software developer and trainer looking for work!
           </p>
           <div className="mt-6 flex gap-6">
-
             <SocialLink
-            href="https://twitter.com/jcircle9"
+              href="https://twitter.com/jcircle9"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
-/>
+            />
             <SocialLink
-            href="https://instagram.com"
+              href="https://instagram.com"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
             />
@@ -266,17 +255,13 @@ export default function Home({ articles }) {
               icon={LinkedInIcon}
             />
           </div>
-          </div>
-
+        </div>
       </Container>
-      {/* <Photos /> */}
-      {/* <Slideshow /> */}
+      <Photos />
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
-            {/* {articles.map((article) => (
-              <Article key={article.slug} article={article} />
-            ))} */}
+
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
 

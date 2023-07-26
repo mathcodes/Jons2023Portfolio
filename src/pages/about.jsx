@@ -10,7 +10,7 @@ import {
   LinkedInIcon,
   TwitterIcon,
 } from '@/components/SocialIcons'
-import avatarImage from '@/images/avatar.png'
+import portraitImage from '@/images/avatar.png'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
@@ -45,7 +45,7 @@ function MailIcon(props) {
   )
 }
 
-export default function About({large = false}) {
+export default function About() {
   return (
     <>
       <Head>
@@ -60,15 +60,12 @@ export default function About({large = false}) {
           <div className="lg:pl-20">
             <div className="max-w-xs px-2.5 lg:max-w-none">
 
-            <Image
-  src={avatarImage}
-  alt=""
-  className={clsx(
-    'rounded-full bg-zinc-100 object-cover    dark:bg-zinc-800 h-40 w-40  duration-200 transition-opacity duration-1000 flip-on-hover',  large ? 'h-20 w-20 ' : 'h-15 w-15'
-  )}
-  id="avatarImg"
-  priority
-/>
+              <Image
+                src={portraitImage}
+                alt=""
+                sizes="(min-width: 1024px) 32rem, 20rem"
+                className="aspect-circle rotate-3 rounded-2xl bg-none object-cover  "
+              />
             </div>
           </div>
           <div className="lg:order-first lg:row-span-2">
@@ -117,7 +114,7 @@ export default function About({large = false}) {
             Skills
           </h1>
           <div className="flex flex-wrap space-x-2  justify-center">
-            <img src="https://img.shields.io/badge/-Express-black?style=flat&logo=express&logoColor=white" alt="Express" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
+          <img src="https://img.shields.io/badge/-Express-black?style=flat&logo=express&logoColor=white" alt="Express" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
             <img src="https://img.shields.io/badge/-ReactJS-blue?style=flat&logo=react&logoColor=white" alt="ReactJS" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
             <img src="https://img.shields.io/badge/-MongoDB-green?style=flat&logo=mongodb&logoColor=white" alt="MongoDB" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
             <img src="https://img.shields.io/badge/-React_Native-61DAFB?style=flat&logo=react&logoColor=white" alt="React-Native" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
