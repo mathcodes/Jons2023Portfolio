@@ -10,7 +10,7 @@ import {
   LinkedInIcon,
   TwitterIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/avatar.png'
+import portraitImage from '../images/avatar.png';
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
@@ -114,7 +114,7 @@ export default function About() {
             Skills
           </h1>
           <div className="flex flex-wrap space-x-2  justify-center">
-          <img src="https://img.shields.io/badge/-Express-black?style=flat&logo=express&logoColor=white" alt="Express" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
+            <img src="https://img.shields.io/badge/-Express-black?style=flat&logo=express&logoColor=white" alt="Express" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
             <img src="https://img.shields.io/badge/-ReactJS-blue?style=flat&logo=react&logoColor=white" alt="ReactJS" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
             <img src="https://img.shields.io/badge/-MongoDB-green?style=flat&logo=mongodb&logoColor=white" alt="MongoDB" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
             <img src="https://img.shields.io/badge/-React_Native-61DAFB?style=flat&logo=react&logoColor=white" alt="React-Native" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
@@ -133,7 +133,6 @@ export default function About() {
             <img src="https://img.shields.io/badge/-Jest-red?style=flat&logo=jest&logoColor=white" alt="Jest" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
             <img src="https://img.shields.io/badge/-React_Testing_Library-purple?style=flat" alt="React-Testing-Library" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
             <img src="https://img.shields.io/badge/-Open_Source-brightgreen?style=flat" alt="Open-Source" style={{ width: 'auto', height: '1.5rem' }} className="my-2" />
-
           </div>
         </div>
       </Container>

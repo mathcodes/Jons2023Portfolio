@@ -24,6 +24,7 @@ import image5 from '@/images/photos/image-5.jpg'
 
 import { formatDate } from '@/lib/formatDate'
 import Slideshow from '@/components/SlideShow'
+import Journals from '@/components/Journals'
 
 
 
@@ -131,10 +132,10 @@ function Resume() {
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100 font-bold font-bold">
 
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
-</svg>
-       <span className="ml-3">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+        </svg>
+        <span className="ml-3">
 
 
           Clients</span>
@@ -157,9 +158,8 @@ function Resume() {
               <dt className="sr-only">Date</dt>
               <dd
                 className="ml-auto text-xs text-zinc-800 dark:text-zinc-100 font-bold font-bold"
-                aria-label={`${role.start.label ?? role.start} until ${
-                  role.end.label ?? role.end
-                }`}
+                aria-label={`${role.start.label ?? role.start} until ${role.end.label ?? role.end
+                  }`}
               >
                 <time dateTime={role.start.dateTime ?? role.start}>
                   {role.start.label ?? role.start}
@@ -175,11 +175,11 @@ function Resume() {
       </ol>
       <a href="/files/Jon_Christie_Resume.pdf" download="Jon_Christie_CV.pdf" >
 
-                <div className="group stroke-red-600 transition group-active:stroke-red-600 dark:group-hover:stroke-red-500 dark:group-active:stroke-red-500">
-      <Button variant="secondary" className="mt-6 w-full relative border stroke-red-600 border-red-600 text-white font-bold transition group-active:stroke-red-600 dark:group-hover:stroke-red-900 dark:group-active:stroke-red-500">
-        Download CV
-        <ArrowDownIcon className="h-4 w-4 stroke-red-600 transition group-active:stroke-red-600 dark:group-hover:stroke-red-500 dark:group-active:stroke-red-500" />
-      </Button></div></a>
+        <div className="group stroke-red-600 transition group-active:stroke-red-600 dark:group-hover:stroke-red-500 dark:group-active:stroke-red-500">
+          <Button variant="secondary" className="mt-6 w-full relative border stroke-red-600 border-red-600 text-white font-bold transition group-active:stroke-red-600 dark:group-hover:stroke-red-900 dark:group-active:stroke-red-500">
+            Download CV
+            <ArrowDownIcon className="h-4 w-4 stroke-red-600 transition group-active:stroke-red-600 dark:group-hover:stroke-red-500 dark:group-active:stroke-red-500" />
+          </Button></div></a>
     </div>
   )
 }
@@ -258,17 +258,17 @@ export default function Home({ articles }) {
         </div>
       </Container>
       <Photos />
+
       <Container className="mt-24 md:mt-28">
-        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          <div className="flex flex-col gap-16">
-
-          </div>
-          <div className="space-y-10 lg:pl-16 xl:pl-24">
-
-            <Resume />
-          </div>
+      <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
+        <div className="flex flex-col gap-16">
+         <Journals />
         </div>
-      </Container>
+        <div className="space-y-10 lg:pl-16 xl:pl-24">
+          <Resume />
+        </div>
+      </div>
+    </Container>
     </>
   )
 }

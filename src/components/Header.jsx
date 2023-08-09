@@ -6,8 +6,8 @@ import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import avatarImage from '@/images/avatar.png'
-import avatarImage2 from '@/images/avatar2.png'
+import HS2023 from '../images/avatar.png';
+import HS20233 from '../images/avatar3.png';
 
 function CloseIcon(props) {
   return (
@@ -235,7 +235,7 @@ function Avatar({ large = false, className, ...props }) {
     {...props}
   >
     {/* <Image
-      src={avatarImage}
+      src={HS2023.png}
       alt=""
       sizes={large ? '4rem' : '2.25rem'}
       className={clsx(
@@ -245,7 +245,7 @@ function Avatar({ large = false, className, ...props }) {
       priority
     /> */}
     <Image
-  src={avatarImage}
+  src={HS2023}
   alt=""
   sizes={large ? '4rem' : '2.25rem'}
   className={clsx(
@@ -256,11 +256,12 @@ function Avatar({ large = false, className, ...props }) {
 />
 
     <Image
-      src={avatarImage2}
+      src={HS20233}
       alt="Hover image"
       sizes={large ? '4rem' : '2.25rem'}
-      className="rounded-full object-cover absolute top-0 left-0 transition-opacity duration-1000 opacity-0 group-hover:opacity-100"
-    />
+      className={clsx(
+        'rounded-full bg-zinc-100 object-cover absolute   dark:bg-zinc-800 h-3/4 w-3/4  transition-width duration-200 transition-opacity duration-1000 group-hover:opacity-0 flip-on-hover',  large ? 'h-16 w-16 ' : 'h-9 w-9'
+      )}    />
   </Link>
 </div>
   )

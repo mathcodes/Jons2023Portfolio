@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import avatarImage from '../images/avatar.png';
+import HS2023 from '../images/avatar.png';
 import { MobileNavItem } from '@/components/Header';
 
 const Slideshow = () => {
