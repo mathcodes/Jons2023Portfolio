@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -13,14 +14,21 @@ import {
   TwitterIcon,
 } from '@/components/SocialIcons'
 import gncoLogo from '@/images/logos/gncoLogo.png'
+import asksageLogo from '@/images/logos/askSageLogo.png'
 import scbLogo from '@/images/logos/scbLogo.png'
 import te21Logo from '@/images/logos/te21Logo.jpg'
 import pivotousLogo from '@/images/logos/pivotousLogo.png'
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
+import image1 from '@/images/1.png'
+import image2 from '@/images/2.png'
+import image3 from '@/images/3.png'
+import image4 from '@/images/4.png'
+import image5 from '@/images/5.png'
+import image6 from '@/images/6.png'
+import image7 from '@/images/7.png'
+import image8 from '@/images/8.png'
+import image9 from '@/images/9.png'
+import image10 from '@/images/10.png'
+
 
 import { formatDate } from '@/lib/formatDate'
 import Slideshow from '@/components/SlideShow'
@@ -64,37 +72,18 @@ function SocialLink({ icon: Icon, ...props }) {
   )
 }
 
-// function Newsletter() {
-//   return (
-//     <form
-//       action="/thank-you"
-//       className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
-//     >
-//       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100 font-bold font-bold">
-//         <MailIcon className="h-6 w-6 flex-none" />
-//         <span className="ml-3">Stay up to date</span>
-//       </h2>
-//       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-100 font-bold">
-//         Get notified when I publish something new, and unsubscribe at any time.
-//       </p>
-//       <div className="mt-6 flex">
-//         <input
-//           type="email"
-//           placeholder="Email address"
-//           aria-label="Email address"
-//           required
-//           className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-100 font-bold focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
-//         />
-//         <Button type="submit" className="ml-4 flex-none">
-//           Join
-//         </Button>
-//       </div>
-//     </form>
-//   )
-// }
-
 function Resume() {
   let resume = [
+    {
+      company: 'asksage.ai',
+      title: 'Frontend Developer',
+      logo: asksageLogo,
+      start: '2023',
+      end: {
+        label: 'Present',
+        dateTime: new Date().getFullYear(),
+      },
+    },
     {
       company: 'Gladis & Co.',
       title: 'Web Developer',
@@ -185,12 +174,22 @@ function Resume() {
 }
 
 function Photos() {
-  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
+  const rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2'];
+
+  const allImages = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10];
+
+  const [randomImages, setRandomImages] = useState([]);
+
+  useEffect(() => {
+    const shuffledImages = [...allImages].sort(() => 0.5 - Math.random());
+    const selectedImages = shuffledImages.slice(0, 5);
+    setRandomImages(selectedImages);
+  }, []);
 
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
+        {randomImages.map((image, imageIndex) => (
           <div
             key={image.src}
             className={clsx(
@@ -200,15 +199,16 @@ function Photos() {
           >
             <Image
               src={image}
-              alt=""
+              alt="this is a random image made with Lensa using jonchristie's jon christie images photos"
               sizes="(min-width: 640px) 18rem, 11rem"
               className="absolute inset-0 h-full w-full object-cover"
+              loading="lazy" // Add lazy loading attribute
             />
           </div>
         ))}
       </div>
     </div>
-  )
+  );
 }
 
 export default function Home({ articles }) {
@@ -234,7 +234,7 @@ export default function Home({ articles }) {
             I’m Jon, a software developer and trainer looking for work!
           </p>
           <div className="mt-6 flex gap-6">
-            <SocialLink
+            {/* <SocialLink
               href="https://twitter.com/jcircle9"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
@@ -253,7 +253,7 @@ export default function Home({ articles }) {
               href="https://linkedin.com"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
-            />
+            /> */}
           </div>
         </div>
       </Container>
@@ -262,7 +262,6 @@ export default function Home({ articles }) {
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col ">
-            Hey
             <Journals />
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
