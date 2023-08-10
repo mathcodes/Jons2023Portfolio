@@ -7,6 +7,33 @@ Welcome to my portfolio project! This README file provides information about the
 
 My portfolio is a web application designed to showcase my projects, skills, and experiences. It is built using React and Next.js, providing a modern and interactive user interface. The portfolio includes features such as blog posts, project galleries, and contact information to connect with me.
 
+## Technologies Explained:
+
+| Dependency                | Description                                                                                                   |
+|---------------------------|---------------------------------------------------------------------------------------------------------------|
+| @headlessui/react         | Provides accessible and customizable UI components. Used in React components for UI elements.              |
+| @mapbox/rehype-prism      | Adds syntax highlighting to code blocks in markdown. Enhances code blocks in blog posts.                   |
+| @mdx-js/loader            | Converts MDX files into React components. Used to parse MDX content for rendering.                        |
+| @mdx-js/react             | Renders MDX content as React components. Used to render MDX content within components.                    |
+| @next/font                | Loads fonts in a Next.js project. Used in global styles or specific components.                           |
+| @next/mdx                 | Integrates MDX files with Next.js pages. Enables writing MDX content in Next.js pages.                     |
+| @tailwindcss/typography   | Adds typography styles to Tailwind CSS. Applied as styles to enhance typography.                           |
+| autoprefixer              | Adds vendor prefixes to CSS for compatibility. Applied to Tailwind CSS styles for cross-browser support.  |
+| clsx                      | Helps manage dynamic class names in React components. Used to conditionally apply class names.             |
+| express                   | Provides server-side routing and middleware capabilities. Handles server-side routes and logic.           |
+| fast-glob                 | Efficiently searches for files using glob patterns. Used to find files, e.g., blog post MDX files.         |
+| feed                      | Generates RSS feeds for blog content. Creates RSS feeds for blog posts.                                    |
+| focus-visible             | Adds a focus indicator to elements that are keyboard focused. Enhances keyboard navigation experience.     |
+| next                      | Framework for building server-rendered React applications. Core of the Next.js app structure.              |
+| next-router-mock          | Mocks Next.js router for testing purposes. Used in testing scenarios involving routing.                   |
+| postcss-focus-visible     | Adds focus styles only when keyboard navigation occurs. Enhances keyboard navigation experience.           |
+| react                     | JavaScript library for building user interfaces. Fundamental for building React components.                |
+| react-dom                 | Renders React components into the DOM. Used to render React components in the DOM.                         |
+| react-icons               | Provides a collection of popular icons as React components. Used to display icons within components.       |
+| remark-gfm                | Adds GitHub Flavored Markdown support to remark. Enables enhanced markdown support.                        |
+| tailwindcss               | Utility-first CSS framework for rapid UI development. Used for styling components and layouts.             |
+| vercel                    | Hosting platform for deploying web applications. Used to deploy the Next.js app.                            |
+
 ## Installation
 
 To install and run the portfolio application locally, please follow these steps:

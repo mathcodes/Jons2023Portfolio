@@ -5,15 +5,15 @@ const Journals = () => {
   const journalData = [
     {
       title: 'Journal 1',
-      file: '../public/files/journals/web4web3.pdf'
+      file: 'https://github.com/mathcodes/Jons2023Portfolio/blob/main/public/files/journals/web4web3.pdf'
     },
     {
       title: 'Journal 2',
-      file: '../../public/files/journals/Storyfier.pdf'
+      file: 'https://github.com/mathcodes/Jons2023Portfolio/blob/main/public/files/journals/Storyfier.pdf'
     },
     {
       title: 'Journal 3',
-      file: '/files/journals/360VideosinMetaverse.pdf'
+      file: 'https://github.com/mathcodes/Jons2023Portfolio/blob/main/public/files/journals/360VideosinMetaverse.pdf'
     },
   ];
 
@@ -22,10 +22,10 @@ const Journals = () => {
       <h2 className="text-2xl font-bold">Journals</h2>
       {journalData.map((journal, index) => (
         <a key={index} href={journal.file} download={`${journal.title}.pdf`}>
-          <div className="group border dark:group-hover border-blue-900 p-4 rounded-md transition group-active:border-blue-600 dark:group-hover:border-blue-800">
-            <Button variant="secondary" className="w-full relative">
+          <div className="">
+            <Button variant="secondary" className="">
               Download {journal.title}
-              <ArrowDownIcon className="h-4 w-4 stroke-blue-500 transition group-active:stroke-blue-600 dark:group-hover:stroke-blue-800 dark:group-active:stroke-blue-600" />
+              <ArrowDownIcon className="" />
             </Button>
           </div>
         </a>
