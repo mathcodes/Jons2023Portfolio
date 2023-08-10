@@ -38,7 +38,7 @@ const Journals = () => {
             {journal.title}
             <a key={index} href={journal.file} download={`${journal.title}.pdf`}>
               <Button variant="secondary" className="mt-6 w-full relative border stroke-red-600 border-red-600 text-white font-bold transition group-active:stroke-red-600 dark:group-hover:stroke-red-900 dark:group-active:stroke-red-500">
-                <div className="">Download ▼</div>
+                <div className=""> Download ▼ </div>
               </Button>
             </a>
           </div>
