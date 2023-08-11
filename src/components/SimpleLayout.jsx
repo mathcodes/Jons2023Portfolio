@@ -11,7 +11,6 @@ export function SimpleLayout({ title, intro, children }) {
           {intro}
         </p>
       </header>
-      <div className=" mt-6 \font-light">{children}</div>
       <div className=" mt-6 font-light">{children}</div>
     </Container>
   )
