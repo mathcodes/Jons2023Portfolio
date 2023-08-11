@@ -14,7 +14,7 @@ import {
   TwitterIcon,
 } from '@/components/SocialIcons'
 import gncoLogo from '@/images/logos/gncoLogo.png'
-import asksageLogo from '@/images/logos/askSageLogo.png'
+import asksageLogo from '@/images/logos/asksageLogo.png'
 import scbLogo from '@/images/logos/scbLogo.png'
 import te21Logo from '@/images/logos/te21Logo.jpg'
 import pivotousLogo from '@/images/logos/pivotousLogo.png'
