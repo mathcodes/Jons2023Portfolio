@@ -24,7 +24,7 @@ const Journals = () => {
 
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-      <h2 className="flex text-sm text-zinc-900 dark:text-zinc-100 font-bold font-bold">
+      <h2 className="flex text-sm text-zinc-900 dark:text-zinc-100 font-bold">
 
         <GiArchiveResearch className="text-2xl text-zinc-900 dark:text-zinc-100" />
         <span className="ml-3">

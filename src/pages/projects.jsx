@@ -80,7 +80,7 @@ export default function Projects() {
               <div className="relative z-10 flex items-center justify-center shadow-md ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:ring-0">
                 <Image src={project.image} alt="" unoptimized />
               </div>
-              <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100 font-bold font-bold">
+              <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100 font-bold">
                 {project.linkLive ? (
                   <Card.Link href={project.linkLive}>{project.name}</Card.Link>
                 ) : (
