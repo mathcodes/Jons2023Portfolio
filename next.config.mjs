@@ -9,6 +9,9 @@ const nextConfig = {
   experimental: {
     scrollRestoration: true,
   },
+  images: {
+    domains: ['raw.githubusercontent.com'], // Add your image domains here
+  },
 }
 
 const withMDX = nextMDX({

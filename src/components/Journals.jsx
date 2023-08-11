@@ -31,7 +31,7 @@ const Journals = () => {
           Journals Of Interest</span>
       </h2>
 
-      <div className=" mt-6 space-y-4 grid gap-4 md:gap-6 lg:gap-8 grid-cols-1  lg:grid-cols-2">
+      <div className=" mt-6 grid gap-4 md:gap-6 lg:gap-8 grid-cols-1  lg:grid-cols-2">
         {journalData.map((journal, index) => (
 
           <div key={journal.title} className="group text-sm text-zinc-900 hover:text-zinc-900 dark:text-zinc-100 border   border-blue-900 p-4 rounded-md transition group-active:border-blue-600  ">

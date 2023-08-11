@@ -21,7 +21,8 @@ function Blog({ article }) {
           {formatDate(article.date)}
         </Card.Eyebrow>
         <Card.Description className="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-800 dark:text-zinc-100 font-bold font-bold">{article.description}</Card.Description>
-        <Card.Cta href={`${article.slug}`} target="_blank">Read article</Card.Cta>
+        <Card.Cta href={`${article.slug}`} target="_blank">
+          <a href={`${article.slug}`}>Read article</a></Card.Cta>
       </Card>
       <Card.Eyebrow
         as="time"
