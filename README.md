@@ -11,7 +11,7 @@ My portfolio is a web application designed to showcase my projects, skills, and 
 
 | Dependency                | Description                                                                                                   |
 |---------------------------|---------------------------------------------------------------------------------------------------------------|
-| @headlessui/react         | Provides accessible and customizable UI components. Used in React components for UI elements.              |
+| @headlessui/react         | Provides accessible & customizable UI components. Used in React components for UI elements.              |
 | @mapbox/rehype-prism      | Adds syntax highlighting to code blocks in markdown. Enhances code blocks in blog posts.                   |
 | @mdx-js/loader            | Converts MDX files into React components. Used to parse MDX content for rendering.                        |
 | @mdx-js/react             | Renders MDX content as React components. Used to render MDX content within components.                    |
